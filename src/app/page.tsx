@@ -29,10 +29,10 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <div className="bg-[url('/images/bg1.svg')] bg-cover bg-center h-[90vh] w-full">
+      <div className="bg-[url('/images/bg1.svg')] bg-cover bg-center h-[70vh] w-full">
         <div className="flex flex-col justify-center items-center text-white">
           <h1 className="font-bold text-[64px] mt-[126px] font2">Unveil Your Natural Radiance</h1>
-          <p className="font-normal mt-6 font3 text-2xl">Discover the secret to radiant, healthy skin with our exclusive range of skincare solutions.</p>
+          <p className="font-normal mt-6 font3 text-2xl max-w-[782px] text-center">Discover the secret to radiant, healthy skin with our exclusive range of skincare solutions.</p>
           <div className="flex flex-row">
             <button className="w-[118px] h-12 gap-2 bg-[#408C2B] mt-[60px] rounded-md text-white" type="button">
               <div className="flex flex-row ml-4">
