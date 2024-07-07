@@ -1,10 +1,10 @@
-<svg width="461" height="333" viewBox="0 0 461 333" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="418" height="333" viewBox="0 0 418 333" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_d_63_1045)">
 <path d="M2 13C2 6.37258 7.37258 1 14 1H404C410.627 1 416 6.37258 416 13V318C416 324.627 410.627 330 404 330H14C7.37258 330 2 324.627 2 318V13Z" fill="#FEF7FF" shape-rendering="crispEdges"/>
 <path d="M2.5 13C2.5 6.64873 7.64873 1.5 14 1.5H404C410.351 1.5 415.5 6.64873 415.5 13V318C415.5 324.351 410.351 329.5 404 329.5H14C7.64872 329.5 2.5 324.351 2.5 318V13Z" stroke="#CCCBCB" shape-rendering="crispEdges"/>
 </g>
-<rect opacity="0.7" x="152" y="43" width="308.633" height="264.5" fill="url(#pattern0_63_1045)" fill-opacity="0.1"/>
-<rect x="152.895" y="43" width="79.9166" height="251.976" fill="url(#pattern1_63_1045)"/>
+<rect opacity="0.7" x="152" y="43" width="264" height="264" fill="url(#pattern0_63_1045)" fill-opacity="0.1"/>
+<rect x="4" y="2" width="412" height="327" fill="url(#pattern1_63_1045)"/>
 <rect x="151.404" y="158.104" width="81.4076" height="136.872" fill="url(#pattern2_63_1045)"/>
 <defs>
 <filter id="filter0_d_63_1045" x="0" y="0" width="418" height="333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -18,10 +18,10 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_63_1045" result="shape"/>
 </filter>
 <pattern id="pattern0_63_1045" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_63_1045" transform="scale(0.000966184 0.0011274)"/>
+<use xlink:href="#image0_63_1045" transform="scale(0.00112953)"/>
 </pattern>
 <pattern id="pattern1_63_1045" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image1_63_1045" transform="scale(0.00373134 0.00118343)"/>
+<use xlink:href="#image1_63_1045" transform="matrix(0.000723777 0 0 0.000911915 0.361395 0.125382)"/>
 </pattern>
 <pattern id="pattern2_63_1045" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image2_63_1045" transform="scale(0.0018315 0.00108932)"/>
