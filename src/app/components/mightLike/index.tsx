@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import React from "react";
-import { products } from "@/app/data/data";
+import { products } from "@/app/data/mightLikeData";
 import Featured from "../featured";
 
 export const MightLike: React.FC = () => {

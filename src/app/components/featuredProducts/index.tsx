@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { products } from "@/app/data/data";
+import { products } from "@/app/data/productData";
 import Featured from "../featured";
 
 export const FeaturedProducts: React.FC = () => {
