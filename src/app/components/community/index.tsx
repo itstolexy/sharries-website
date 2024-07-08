@@ -12,14 +12,14 @@ export const Community: React.FC = () => {
             <Link href=""><p className="font-normal font3 text-base mt-[42.5px] text-[#40BC2B] underline underline-offset-[14px]">Follow Us</p></Link>
           </div>
 
-          <div>
+          <div className="ml-auto">
             <div className="flex flex-row">
-              <img className="ml-[164px] mr-[44px] mt-[59px]" src="/images/j1.svg" alt="j1" />
-              <img src="/images/j2.svg" alt="j2" />
+              <img className="ml-[164px] mr-[44px] mt-[59px] max-w-[100%]" src="/images/j1.svg" alt="j1" />
+              <img className="max-w-[100%] h-auto" src="/images/j2.svg" alt="j2" />
             </div>
             <div className="flex flex-row">
-              <img className="ml-[298px] mr-[29px] mt-[76px]" src="/images/j3.svg" alt="j3" />
-              <img className="mt-[34px]" src="/images/j4.svg" alt="j4" />
+              <img className="ml-[298px] mr-[29px] mt-[76px] max-w-[100%] h-auto" src="/images/j3.svg" alt="j3" />
+              <img className="mt-[34px] max-w-[100%] h-auto" src="/images/j4.svg" alt="j4" />
             </div>
           </div>
         </div>

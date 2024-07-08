@@ -4,8 +4,8 @@ export const Footer: React.FC = () => {
   return (
     <footer className="flex flex-row">
       <div>
-        <hr className="bg-[#DFDFDF] mt-[120px]" />
-        <div className="flex mt-[100px] mb-[137px] font3">
+        <hr className="bg-[#DFDFDF] mt-[50px]" />
+        <div className="flex mt-[50px] mb-[50px] font3">
           <span className="ml-[80px]">
             <p className="font-light text-lg">About Us</p>
             <p className="font-normal text-lg mt-8">Shop</p>
