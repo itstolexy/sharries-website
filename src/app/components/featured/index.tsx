@@ -15,7 +15,7 @@ const Featured: React.FC<FeaturedProps> = ({ image, title, price, buttonText, bu
       <img src={image} alt="Card Image" className="card-image" />
       <div className="flex flex-row">
         <div className="mt-6">
-          <p className="font-light text-lg font3">{title}</p>
+          <p className="font-light text-lg font3 max-w-[130px]">{title}</p>
           <p className="font-normal text-lg font4">{price}</p>
         </div>
         <button
