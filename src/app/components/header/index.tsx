@@ -11,22 +11,22 @@ export const Header: React.FC = () => {
           <img className="w-6 h-6" src="/images/nav.svg" alt="nav" />
           <p className="ml-2 text-sm font-normal mt-1">Menu</p>
         </div>
-        <div className="flex flex-row ml-[50px]">
+        <div className="lg:flex flex-row ml-[50px] hidden sm:block">
           <img className="w-6 h-6" src="/images/search.svg" alt="search" />
           <p className="ml-2 text-sm font-normal w-[77px] mt-1">Search</p>
         </div>
-        <h2 className="flex text-[#4EAB35] text-[32px] font-normal mx-auto font1 -mt-2">
+        <h2 className="flex text-[#4EAB35] lg:text-[32px] sm:text-xl font-normal mx-auto font1 -mt-2">
           Sharrie’s Signature
         </h2>
-        <div className="flex flex-row gap-2 max-w-full">
+        <div className="lg:flex flex-row gap-2 max-w-full hidden sm:block">
           <img className="ml-[25px] w-6 h-6" src="/images/phone.svg" alt="phone" />
           <p className="ml-2 text-sm font-normal mt-1">Contact Us</p>
         </div>
         <div className="flex flex-row gap-2">
           <img className="ml-[25px] w-6 h-6" src="/images/cart.svg" alt="cart" />
-          <p className="ml-2 text-sm font-normal mt-1">Cart</p>
+          <p className="ml-2 text-sm font-normal mt-1 hidden sm:block">Cart</p>
         </div>
-        <img className="ml-[50px] h-6 w-6" src="/images/profile.svg" alt="profile" />
+        <img className="ml-[50px] h-6 w-6 hidden sm:block" src="/images/profile.svg" alt="profile" />
       </nav>
     </header>
   );

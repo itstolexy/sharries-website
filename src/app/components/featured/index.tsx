@@ -19,7 +19,7 @@ const Featured: React.FC<FeaturedProps> = ({ image, title, price, buttonText, bu
           <p className="font-normal text-lg font4">{price}</p>
         </div>
         <button
-          className="font3 border rounded-md border-[#40BC2B] text-[#40BC2B] w-[195px] h-12 mt-6 ml-auto"
+          className="font3 border rounded-md border-[#40BC2B] hover:bg-[#408C2B] hover:text-white text-[#40BC2B] w-[195px] h-12 mt-6 ml-auto"
           onClick={buttonAction}
         >
           {buttonText}

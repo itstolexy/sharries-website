@@ -1,3 +1,6 @@
+
+Figma link : https://www.figma.com/design/clF99fTP4N8Brmt0PtPz5C/HNG-Internship-projects?node-id=180-392&t=wHdj342porjpzrCW-0
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
