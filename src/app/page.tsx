@@ -2,10 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Header from "./components/header";
-import Featured from "./components/featured";
-import Link from "next/link";
 import Footer from "./components/footer";
-import { products } from "./data/productData";
 import Hero from "./components/hero";
 import Product from "./components/product";
 import Collections from "./components/collectionsSection";

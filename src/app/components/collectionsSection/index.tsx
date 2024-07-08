@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Collection from "../collection";
+import { collectionData } from "@/app/data/collectionData";
 
 export const Collections: React.FC = () => {
   return (
@@ -10,10 +11,9 @@ export const Collections: React.FC = () => {
         <hr />
       </div>
       <div className="mx-[80px] flex flex-row mb-4">
-        <Collection image="/images/p1.svg" title="Cleanse & Prep" />
-        <Collection image="/images/p2.svg" title="Moisturize & Protect" />
-        <Collection image="/images/p3.svg" title="Treat & Nourish" />
-        <Collection image="/images/p4.svg" title="Body Care" />
+        {collectionData.map((collection, index) => (
+          <Collection key={index} image={collection.image} title={collection.title} />
+        ))}
       </div>
       <hr />
     </section>
