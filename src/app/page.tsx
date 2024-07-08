@@ -34,7 +34,7 @@ export default function Home() {
       <Product />
       <Collections />
       <FeaturedProducts />
-      < Promotion />
+      <Promotion />
       <MightLike />
       <Community />
       <Reviews />
