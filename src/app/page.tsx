@@ -37,13 +37,13 @@ const HomePage = () => {
 
   return (
     <main className="overflow-hidden">
-      <Header />
+      <Header cartCount={0} />
       <Hero />
       <Product />
       <Collections />
       <FeaturedProducts onButtonClick={handleButtonClick} />
       <Promotion />
-      <MightLike />
+      <MightLike onButtonClick={handleButtonClick} />
       <Community />
       <Reviews />
       <Footer />

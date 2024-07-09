@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export const Footer: React.FC = () => {
@@ -8,38 +9,38 @@ export const Footer: React.FC = () => {
         <div className="flex mt-[50px] mb-[50px] font3">
           <span className="ml-[80px]">
             <p className="font-light text-lg">About Us</p>
-            <p className="font-normal text-lg mt-8">Shop</p>
-            <p className="font-normal text-lg mt-4">Our Story</p>
-            <p className="font-normal text-lg mt-4">Blog</p>
+            <p className="font-normal text-lg mt-4">Shop</p>
+            <p className="font-normal text-lg mt-2">Our Story</p>
+            <p className="font-normal text-lg mt-2">Blog</p>
           </span>
-          <span className="ml-[234px]">
+          <span className="ml-[130px]">
             <p className="font-light text-lg">Help</p>
-            <p className="font-normal text-lg mt-8">
+            <p className="font-normal text-lg mt-4">
               You can <span className="underline text-[#4EAB35]">email</span>
             </p>
-            <p className="font-normal text-lg mt-4">FAQ</p>
-            <p className="font-normal text-lg mt-4">Shipping</p>
+            <p className="font-normal text-lg mt-2">FAQ</p>
+            <p className="font-normal text-lg mt-2">Shipping</p>
           </span>
           <span className="ml-[196px]">
             <p className="font-light text-lg">Socials</p>
-            <p className="font-normal text-lg mt-8">Instagram</p>
-            <p className="font-normal text-lg mt-4">Twitter</p>
-            <p className="font-normal text-lg mt-4">Facebook</p>
+            <p className="font-normal text-lg mt-4">Instagram</p>
+            <p className="font-normal text-lg mt-2">Twitter</p>
+            <p className="font-normal text-lg mt-2">Facebook</p>
           </span>
           <span className="ml-[231px] max-w-[280px]">
             <p className="font-light text-lg">Email Sign-up</p>
-            <p className="font-normal text-lg mt-8">
+            <p className="font-normal text-lg mt-4">
               <span className="underline text-[#4EAB35]">Sign Up</span> for
               Sharrie’s signature emails and receive latest news including
               exclusive offers
             </p>
-            <p className="font-normal text-lg mt-8">Follow Us</p>
+            <p className="font-normal text-lg mt-4">Follow Us</p>
           </span>
         </div>
         <hr className="bg-[#DFDFDF]" />
-        <div className="mt-4">
+        <div className="mt-2">
           <span className="flex flex-row">
-            <p className="ml-[80px] text-sm font-normal">
+            <p className="ml-[60px] text-sm font-normal">
               &copy; sharrie’s signature 2020
             </p>
             <span className="flex flex-row ml-auto">
@@ -48,7 +49,9 @@ export const Footer: React.FC = () => {
             </span>
           </span>
           <h2 className="flex text-[#4EAB35] text-2xl font-normal font1 justify-center mt-6 mb-[58px]">
+          <Link href="/">
             Sharrie’s Signature
+          </Link>
           </h2>
         </div>
       </div>

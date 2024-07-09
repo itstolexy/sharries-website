@@ -14,11 +14,11 @@ export const Community: React.FC = () => {
 
           <div className="ml-auto">
             <div className="flex flex-row">
-              <img className="ml-[164px] mr-[44px] mt-[59px] max-w-[100%]" src="/images/j1.svg" alt="j1" />
+              <img className="ml-[80px] mr-[22px] mt-[59px] max-w-[100%]" src="/images/j1.svg" alt="j1" />
               <img className="max-w-[100%] h-auto" src="/images/j2.svg" alt="j2" />
             </div>
             <div className="flex flex-row">
-              <img className="ml-[298px] mr-[29px] mt-[76px] max-w-[100%] h-auto" src="/images/j3.svg" alt="j3" />
+              <img className="ml-[150px] mr-[29px] mt-[76px] max-w-[100%] h-auto" src="/images/j3.svg" alt="j3" />
               <img className="mt-[34px] max-w-[100%] h-auto" src="/images/j4.svg" alt="j4" />
             </div>
           </div>

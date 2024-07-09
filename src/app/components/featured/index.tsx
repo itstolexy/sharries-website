@@ -7,12 +7,14 @@ interface FeaturedProps {
   price: string;
   buttonText: string;
   buttonAction: () => void;
+  imageAction: () => void; 
+  description: string; 
 }
 
-const Featured: React.FC<FeaturedProps> = ({ image, title, price, buttonText, buttonAction }) => {
+const Featured: React.FC<FeaturedProps> = ({ image, title, price, buttonText, buttonAction, imageAction, description  }) => {
   return (
     <div className="mt-10 mr-5">
-      <img src={image} alt="Card Image" className="card-image" />
+      <img src={image} alt="Card Image" onClick={imageAction} className="card-image" />
       <div className="flex flex-row">
         <div className="mt-6">
           <h3 className="font-light text-lg font3 max-w-[130px]">{title}</h3>
