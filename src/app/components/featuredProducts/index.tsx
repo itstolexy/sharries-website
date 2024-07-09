@@ -35,7 +35,7 @@ const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ onButtonClick }) =>
   };
 
   return (
-    <section className="mt-[100px]">
+    <section id="feat" className="mt-[100px]">
       <div className="mb-[46px]">
         <h2 className="mx-[80px] font-light text-2xl mb-4 font3">Featured Products</h2>
         <hr />
