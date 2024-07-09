@@ -11,8 +11,10 @@ import FeaturedProducts from "./components/featuredProducts";
 import MightLike from "./components/mightLike";
 import Community from "./components/community";
 import Reviews from "./components/reviews";
+import { useRouter } from "next/navigation";
 
-export default function Home() {
+
+const HomePage = () => {
 
   // const handleAlert = () => {
   //   alert('Alert button clicked!');
@@ -23,17 +25,23 @@ export default function Home() {
   //   window.location.href = 'https://example.com';
   // };
 
-  const handleLog = () => {
-    console.log('Log button clicked!');
+  // const handleLog = () => {
+  //   console.log('Log button clicked!');
+  // };
+
+  const router = useRouter();
+
+  const handleButtonClick = (name: string) => {
+    router.push(`/productdetails/${name}`);
   };
 
   return (
-    <main>
+    <main className="overflow-hidden">
       <Header />
       <Hero />
       <Product />
       <Collections />
-      <FeaturedProducts />
+      <FeaturedProducts onButtonClick={handleButtonClick} />
       <Promotion />
       <MightLike />
       <Community />
@@ -42,3 +50,5 @@ export default function Home() {
     </main >
   );
 }
+
+export default HomePage;
