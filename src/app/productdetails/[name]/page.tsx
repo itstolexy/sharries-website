@@ -42,10 +42,10 @@ const ProductDetails = () => {
   };
 
   return (
-    <div>
+    <div>s
       <Header cartCount={0} />
       {product ? (
-        <div className='mx-[80px] mt-[100px] flex flex-row'>
+        <div className='lg:mx-[80px] lg:mt-[100px] lg:flex lg:flex-row'>
           <img className='' src={product.image} alt="" />
 
           <div className='ml-[135px] max-w-[auto]'>
