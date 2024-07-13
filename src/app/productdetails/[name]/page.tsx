@@ -42,7 +42,7 @@ const ProductDetails = () => {
   };
 
   return (
-    <div>s
+    <div>
       <Header cartCount={0} />
       {product ? (
         <div className='lg:mx-[80px] lg:mt-[100px] lg:flex lg:flex-row'>
@@ -94,7 +94,7 @@ const ProductDetails = () => {
       )
       }
 
-      <MightLike onButtonClick={handleButtonClick} />
+      <MightLike onButtonClick={handleButtonClick} products={[]} />
       <Footer />
     </div >
   );

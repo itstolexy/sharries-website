@@ -1,14 +1,25 @@
-'use client'
+'use client';
 import React from "react";
-import { products } from "@/app/data/productData";
 import Featured from "../featured";
 import { useRouter } from "next/navigation";
 
-interface FeaturedProductsProps {
-  onButtonClick: (name: any) => void;
+interface Product {
+  id: string;
+  name: string;
+  image: string;
+  title: string;
+  price: string;
+  buttonText: string;
+  description: string;
 }
 
-const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ onButtonClick }) => {
+interface FeaturedProductsProps {
+  products: Product[];
+  onButtonClick: (name: string) => void;
+  getImage: (imagePath: string) => string; // Add getImage prop
+}
+
+const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ products = [], onButtonClick, getImage }) => {
   const router = useRouter();
 
   const showProductDetails = (name: string) => {
@@ -19,7 +30,7 @@ const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ onButtonClick }) =>
     const alertDiv = document.createElement('div');
     alertDiv.innerText = 'Added to cart';
     alertDiv.style.position = 'fixed';
-    alertDiv.style.top = '20px'; // Adjusted top position
+    alertDiv.style.top = '20px';
     alertDiv.style.left = '50%';
     alertDiv.style.transform = 'translateX(-50%)';
     alertDiv.style.backgroundColor = '#40BC2B';
@@ -43,8 +54,8 @@ const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ onButtonClick }) =>
           {products.slice(0, 3).map((product, index) => (
             <Featured
               key={index}
-              image={product.image}
-              title={product.title}
+              image={getImage(product.image)}
+              title={product.name}
               price={product.price}
               buttonText={product.buttonText}
               buttonAction={showAlert}
@@ -57,8 +68,8 @@ const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ onButtonClick }) =>
           {products.slice(3, 6).map((product, index) => (
             <Featured
               key={index + 3} // to ensure unique keys
-              image={product.image}
-              title={product.title}
+              image={getImage(product.image)}
+              title={product.name}
               price={product.price}
               buttonText={product.buttonText}
               buttonAction={showAlert}

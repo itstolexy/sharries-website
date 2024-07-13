@@ -1,18 +1,30 @@
-"use client"
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { products } from "@/app/data/productData";
 import Product from "../featured";
 import { useRouter } from "next/navigation";
 
-interface MightLikeProps {
-  onButtonClick: (name: any) => void;
+interface Product {
+  id: string;
+  name: string;
+  description: string;
+  unique_id: string;
+  url_slug: string;
+  is_available: boolean;
+  image: string;
+  price: string;
+  buttonText: string;
 }
 
-const ProductLike: React.FC<MightLikeProps> = ({ }) => {
+interface MightLikeProps {
+  products: Product[];
+  onButtonClick: (name: string) => void;
+  getImage: (imagePath: string) => string; // Add getImage prop
+}
+
+const MightLike: React.FC<MightLikeProps> = ({ products = [], onButtonClick, getImage }) => {
   const router = useRouter();
 
-  const showProductDetails = (name: any) => {
+  const showProductDetails = (name: string) => {
     router.push(`/productdetails/${name}`);
   };
 
@@ -20,7 +32,7 @@ const ProductLike: React.FC<MightLikeProps> = ({ }) => {
     const alertDiv = document.createElement('div');
     alertDiv.innerText = 'Added to cart';
     alertDiv.style.position = 'fixed';
-    alertDiv.style.top = '20px'; // Adjusted top position
+    alertDiv.style.top = '20px';
     alertDiv.style.left = '50%';
     alertDiv.style.transform = 'translateX(-50%)';
     alertDiv.style.backgroundColor = '#40BC2B';
@@ -41,37 +53,37 @@ const ProductLike: React.FC<MightLikeProps> = ({ }) => {
         <h2 className="mx-[80px] font-light text-2xl mb-4 font3">You might like</h2>
         <hr />
         <div className="mx-[80px] flex flex-row mb-4">
-          {products.slice(7, 10).map((products, index) => (
+          {products.slice(0, 3).map((product, index) => (
             <Product
               key={index}
-              image={products.image}
-              title={products.title}
-              price={products.price}
+              image={getImage(product.image)} // Use getImage function
+              title={product.name}
+              price={product.price}
               buttonAction={showAlert}
-              imageAction={() => showProductDetails(products.name)} //
-              buttonText={products.buttonText}
-              description={""} />
+              imageAction={() => showProductDetails(product.name)}
+              buttonText={product.buttonText}
+              description={product.description}
+            />
           ))}
         </div>
         <div className="mx-[80px] flex flex-row mb-4">
-          {products.slice(9, 12).map((products, index) => (
+          {products.slice(3, 6).map((product, index) => (
             <Product
               key={index + 3} // to ensure unique keys
-              image={products.image}
-              title={products.title}
-              price={products.price}
+              image={getImage(product.image)} // Use getImage function
+              title={product.name}
+              price={product.price}
               buttonAction={showAlert}
-              imageAction={() => showProductDetails(products.name)}
-              buttonText={products.buttonText}
-              description={""} />
+              imageAction={() => showProductDetails(product.name)}
+              buttonText={product.buttonText}
+              description={product.description}
+            />
           ))}
         </div>
         <hr />
       </div>
     </section>
-
-
   );
 };
 
-export default ProductLike;
+export default MightLike;
